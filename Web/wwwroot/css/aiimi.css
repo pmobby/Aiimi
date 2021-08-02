@@ -1,0 +1,110 @@
+﻿.btn-aiimi {
+    background-color: #fc2a98;
+    border: none;
+    color: white;    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.btngo {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 60px;
+    margin-left: -70px;
+    padding: 20px;
+}
+
+.btncreate {
+    height: 40px;
+    border-radius: 1.5em;
+}
+
+.btnNew {
+    height: 40px;
+    border-radius: 1.5em;
+}
+
+.btn-usradded {
+    border-radius: 50px;
+    width: 200px;
+}
+
+.divusraddedbtnpos {
+    margin-top:20px;
+    right: 100px;
+}
+
+.divcontent {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    
+}
+body {
+    background-color: #191616;
+    height: 100%;
+}
+
+
+.innerdiv {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;  
+}
+
+.divfields {
+    margin-top:250px;
+}
+
+.search-input {
+    width: 70%;
+    height: 60px;    
+    border-radius: 1.5em;
+}
+
+.namefield {
+    width: 60%;
+    height: 60px;
+    border-radius: 1.5em;
+}
+
+.jpe {
+    width: 60%;
+    height: 60px;
+    border-radius: 1.5em;
+}
+
+.profilediv {
+    margin-top: 40px;
+}
+.fc {
+    background-color: #ffffff;
+    border-radius: 1.5em;
+    border-color: #fc2a98;
+    border-style: solid;
+}
+
+.btnContainer {
+    margin-left: 40%;
+}
+
+.fdiv {
+    margin-top: 10px;
+}
+.newUC {
+    margin-top: 10px;
+}
+

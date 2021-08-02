@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>aiimi</title>
+    <link href="lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="lib/jqueryui/jquery-ui.css" rel="stylesheet"/>
+    <link href="css/aiimi.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="innerdiv">
+        <div class="divcontent">
+            <div class="divusraddedbtnpos" id="usersuccess" >
+                <button type="button" class="btn-aiimi btn-usradded " id="userAddedbtn">New user added! X</button>
+            </div>
+            <div class="divfields">
+                <div class="">                    
+                    <div class="">
+                        <input type="text" class="search-input" placeholder="Search for a user..." id="searchstring">
+                        <button class="btngo btn-aiimi" type="button" id="getbutton" onclick="GetPerson()">Go!</button>
+                    </div>                    
+                </div>
+                <div class="row profilediv" id="profile">
+
+                </div>
+
+                <div id="fieldcontainer" class="fc">
+                    <form class="row g-3 fdiv">
+                        
+                            <div class="col-md-6">
+                                <input type="text" class="namefield" placeholder="First name" id="firstname">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="namefield" placeholder="Last name" id="lastname">
+                            </div>
+                        
+                        
+                            <div class="col-md-4">
+                                <input type="text" class="jpe" placeholder="Job title" id="jobtitle">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="tel" class="jpe" placeholder="Phone" id="phone">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="email" class="jpe" placeholder="Email" id="email" required>
+                            </div>
+                        
+                        
+                            <div class="btnContainer"><input type="submit" value="Create" class="btn-aiimi btncreate" onclick="addUser()"></div>
+                        
+                    </form>
+                </div>
+
+                <div class="btnContainer">
+                    <div class="newUC"><input type="submit" value="New User +" class="btnNew btn-aiimi" id="newUser"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/jqueryui/jquery-ui.js"></script>
+    <script src="js/aiimi.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#userAddedbtn").hide();
+            $("#fieldcontainer").hide();
+
+            $("#searchstring").autocomplete({
+                source: 'api/person/search',
+                minLength: 2,
+                classes: {
+                    "ui-autocomplete": "highlight"
+                }
+            });
+
+            $("button").click(function () {
+                $("#userAddedbtn").hide();
+            });
+
+            $("#newUser").click(function () {
+                $("#fieldcontainer").show();
+            });
+
+        });
+
+
+
+        
+    </script>
+
+</body>
+</html>
