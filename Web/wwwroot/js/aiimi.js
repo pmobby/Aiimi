@@ -32,9 +32,14 @@ function addUser() {
 
             document.getElementById("fieldcontainer").style.display = 'none';
 
+            var btndiv = document.getElementById("usersuccess");
+            let btn = document.createElement('button');
+            btn.className = 'btn-aiimi btn-usradded';
+            btn.innerHTML = 'New user added! X';
+            btndiv.appendChild(btn);
             //document.getElementById("#usersuccess").style.display = 'block';
             
-            jQuery("#usersuccess").show();
+            //jQuery("#usersuccess").show();
             
         }
     };   
